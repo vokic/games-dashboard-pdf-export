@@ -4,6 +4,10 @@
 
 This is a simple Angular project showcasing a catalog of board games. It includes features like displaying game cards, a PDF preview modal, and exporting the game list as a PDF.
 
+## Live Demo
+
+You can see the live version hosted on Vercel: [Here](https://board-games-dashboard-pdf-download.vercel.app/)
+
 ## Technologies Used
 
 - **Angular 19** (Standalone Components)
