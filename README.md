@@ -1,59 +1,43 @@
-# RbtCandidateViktorVokic
+# Board Games Catalog - Angular Project for RBT
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+## Overview
 
-## Development server
+This is a simple Angular project showcasing a catalog of board games. It includes features like displaying game cards, a PDF preview modal, and exporting the game list as a PDF.
 
-To start a local development server, run:
+## Technologies Used
 
-```bash
-ng serve
+- **Angular 19** (Standalone Components)
+- **Tailwind CSS** for styling
+- **Material Icons** for UI icons
+- **html2pdf.js** for PDF export
+- **TypeScript** for type safety
+
+## Project Structure
+
+```
+src/
+├── app/
+│ ├── components/
+│ │ ├── game-card/ # Board game card component
+│ │ └── pdf-preview/ # PDF preview component
+│ ├── services/
+│ │ └── pdf-export.service.ts # PDF export service
+│ ├── app.component.* # Main app files
+├── assets/
+tailwind.config.js
+package.json
+README.md
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## PDF Download
 
-## Code scaffolding
+- The **Download** button exports the preview modal content as a PDF (`board-games.pdf`).
+- The PDF includes all game cards exactly as shown in the preview modal.
+- You can download the sample PDF [here](src/assets/board-games.pdf).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Future Improvements
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Improve PDF styling and layout further.
+- Optimize PDF size
+- Implement search and filtering of board games.
+- Implement different design and animations (+ improved accessibility features) since it is gaming theme
