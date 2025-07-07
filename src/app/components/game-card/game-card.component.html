@@ -1,14 +1,15 @@
-<div
-    class="w-80 lg:w-[28rem] h-76 rounded overflow-hidden shadow-lg bg-white p-6 m-3 flex flex-col justify-between text-gray-800">
+<div class="w-80 lg:w-[28rem] h-76 rounded shadow-lg bg-white p-6 m-3 flex flex-col justify-between text-gray-800">
 
 
     <!-- Header row: name and rating -->
     <div class="flex justify-between items-center mb-1">
         <h2 class="text-2xl font-semibold leading-tight">{{ game.name }}</h2>
-        <div class="flex items-center gap-0.5 text-yellow-500 text-sm">
-            <span class="material-icons" style="font-size: 1rem;">star</span>
-            <span>{{ game.rating }} / 5</span>
+        <div class="flex items-center gap-1 text-yellow-500">
+            <ng-container *ngFor="let icon of getStarsForRating()">
+                <span class="material-icons text-xl">{{ icon }}</span>
+            </ng-container>
         </div>
+
     </div>
 
     <!-- Description -->

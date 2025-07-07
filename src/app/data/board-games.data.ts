@@ -23,7 +23,7 @@ export const BOARD_GAMES: BoardGame[] = [
     category: 'Family',
     difficulty: 'Easy',
     website: 'https://www.daysofwonder.com/tickettoride/en/',
-    rating: 3,
+    rating: 1,
   },
   {
     name: 'Gloomhaven',
