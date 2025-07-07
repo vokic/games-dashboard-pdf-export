@@ -17,16 +17,33 @@
 
   <!-- Modal component -->
   <div *ngIf="showPdfModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative">
+
+    <!-- Modal box -->
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto p-6 relative">
+      <!-- Close button -->
       <button (click)="closePdfModal()" class="absolute top-3 right-3 text-gray-600 hover:text-black text-xl font-bold"
         aria-label="Close modal">
         ×
       </button>
 
-      <h2 class="text-xl font-semibold mb-4">PDF Preview</h2>
+      <!-- Title -->
+      <h2 class="text-xl font-semibold text-center mb-6">PDF Preview</h2>
 
-      <!-- Preview content -->
-      <app-pdf-preview></app-pdf-preview>
+      <!-- Game cards stacked -->
+      <div class="w-full flex justify-center">
+        <div class="flex flex-col items-center space-y-6 w-full max-w-[80%]">
+          <app-game-card *ngFor="let game of boardGames" [game]="game" [fullWidth]="true">
+          </app-game-card>
+        </div>
+      </div>
+
+
+      <!-- Download Button -->
+      <div class="mt-8 flex justify-center">
+        <button class="bg-black text-white font-semibold py-2 px-6 rounded hover:bg-gray-800 transition">
+          Download PDF
+        </button>
+      </div>
     </div>
   </div>
 </div>

@@ -24,4 +24,8 @@ export class AppComponent {
   closePdfModal() {
     this.showPdfModal = false;
   }
+
+  downloadPdf() {
+    console.log('Download PDF clicked');
+  }
 }
