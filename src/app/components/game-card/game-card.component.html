@@ -1,5 +1,5 @@
-<div [ngClass]="fullWidth ? 'w-full' : 'w-80 lg:w-[28rem]'"
-    class="rounded overflow-hidden shadow-lg bg-white p-4 m-3 flex flex-col justify-between text-gray-800">
+<div [ngClass]="fullWidth ? 'w-95' : 'w-80 lg:w-[28rem]'"
+    class="rounded border-gray-200 border overflow-visible bg-white p-4 m-3 flex flex-col justify-between text-gray-800">
 
 
     <!-- Header row: name and rating -->
@@ -54,14 +54,27 @@
         </div>
     </div>
 
+
     <!-- Button -->
-    <a href="{{ game.website }}" target="_blank" rel="noopener noreferrer" class="mt-3 inline-block self-start border border-yellow-500 bg-white hover:bg-yellow-100 text-gray-800 py-1.5 px-3 rounded-lg
- text-sm">
-        Learn More
+    <a href="{{ game.website }}" target="_blank" rel="noopener noreferrer"
+        style="display:inline-block; width:120px; height:36px;" class="py-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="36" role="img" aria-label="Learn More"
+            style="cursor:pointer;">
+            <rect x="0.5" y="0.5" width="119" height="33" fill="#ffffff" stroke="#F59E0B" stroke-width="1" rx="8"
+                ry="8" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="14" fill="#374151"
+                style="user-select:none;">
+                Learn More
+            </text>
+        </svg>
     </a>
 
-
-
-
-
+    <!-- Tailwind styled button -->
+    <!-- Had issues with properly translating this exact design into PDF -->
+    <!-- <a href="{{ game.website }}" target="_blank" rel="noopener noreferrer"
+        class="mt-3 inline-block border border-yellow-500 bg-white hover:bg-yellow-100 text-gray-800 py-1.5 px-3 rounded-lg text-sm"
+        style="display: inline-block; width: 120px; text-align: center; box-sizing: border-box;">
+        Learn More
+    </a>
+    -->
 </div>

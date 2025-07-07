@@ -4,6 +4,7 @@ import { GameCardComponent } from './components/game-card/game-card.component';
 import { BoardGame } from './models/board-game.model';
 import { BOARD_GAMES } from './data/board-games.data';
 import { PdfPreviewComponent } from './components/pdf-preview/pdf-preview.component';
+import { PdfExportService } from './services/pdf-export.service';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,8 @@ import { PdfPreviewComponent } from './components/pdf-preview/pdf-preview.compon
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  constructor(private pdfExportService: PdfExportService) {}
+
   boardGames: BoardGame[] = BOARD_GAMES;
 
   showPdfModal = false;
@@ -25,7 +28,9 @@ export class AppComponent {
     this.showPdfModal = false;
   }
 
-  downloadPdf() {
-    console.log('Download PDF clicked');
+  async exportToPdf(): Promise<void> {
+    await this.pdfExportService.exportToPdf(
+      '#pdf-preview-content app-game-card'
+    );
   }
 }

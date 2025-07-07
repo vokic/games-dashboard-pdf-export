@@ -30,19 +30,16 @@
       <h2 class="text-xl font-semibold text-center mb-6">PDF Preview</h2>
 
       <!-- Game cards stacked -->
-      <div class="w-full flex justify-center">
+      <div id="pdf-preview-content" class="w-full flex justify-center">
         <div class="flex flex-col items-center space-y-6 w-full max-w-[80%]">
-          <app-game-card *ngFor="let game of boardGames" [game]="game" [fullWidth]="true">
-          </app-game-card>
+          <app-game-card *ngFor="let game of boardGames" [game]="game" [fullWidth]="true"></app-game-card>
+
         </div>
       </div>
 
-
       <!-- Download Button -->
       <div class="mt-8 flex justify-center">
-        <button class="bg-black text-white font-semibold py-2 px-6 rounded hover:bg-gray-800 transition">
-          Download PDF
-        </button>
+        <button (click)="exportToPdf()" class="mt-6 bg-black text-white py-2 px-4 rounded">Download</button>
       </div>
     </div>
   </div>

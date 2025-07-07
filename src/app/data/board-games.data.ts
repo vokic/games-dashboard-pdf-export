@@ -4,7 +4,7 @@ export const BOARD_GAMES: BoardGame[] = [
   {
     name: 'Catan',
     description:
-      'Build settlements, trade resources, and race to control the island of Catan. Strategy and negotiation are key to victory.',
+      'Build settlements, trade resources, control the island of Catan. Strategy and negotiation are key to victory.',
     numberOfPlayers: '3-4 players',
     playtime: '60-120 minutes',
     recommendedAge: '10+',
@@ -52,7 +52,7 @@ export const BOARD_GAMES: BoardGame[] = [
   {
     name: 'Pandemic',
     description:
-      'Rebuild a post-war Europe through engine-building and asymmetric factions. Stunning visuals and sharp strategy combined.',
+      'Rebuild a post-war Europe through asymmetric factions. Stunning visuals and sharp strategy combined.',
     numberOfPlayers: '2-4 players',
     playtime: '45 minutes',
     recommendedAge: '8+',
@@ -62,7 +62,7 @@ export const BOARD_GAMES: BoardGame[] = [
     rating: 4,
   },
   {
-    name: 'Terraforming Mars',
+    name: 'TerraforMars',
     description:
       'Draft colorful tiles to decorate the royal palace walls. A beautiful game with elegant, abstract strategy.',
     numberOfPlayers: '1-5 players',
