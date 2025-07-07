@@ -1,0 +1,27 @@
+<div>
+    <h2>{{ game.name }}</h2>
+    <p>{{ game.description }}</p>
+
+    <ul>
+        <li><strong>Players:</strong> {{ game.numberOfPlayers }}</li>
+        <li><strong>Playtime:</strong> {{ game.playtime }}</li>
+        <li><strong>Recommended Age:</strong> {{ game.recommendedAge }}</li>
+        <li><strong>Category:</strong> {{ game.category }}</li>
+
+        <li>
+            <strong>Difficulty:</strong>
+            <span>
+                {{ game.difficulty }}
+                <span title="{{ difficultyTooltips[game.difficulty] }}">INFO</span>
+            </span>
+        </li>
+
+        <li>
+            <strong>Rating:</strong> {{ game.rating }} / 5
+        </li>
+    </ul>
+
+    <a href="{{ game.website }}" target="_blank" rel="noopener noreferrer">
+        Official Website
+    </a>
+</div>

@@ -10,7 +10,7 @@ export const BOARD_GAMES: BoardGame[] = [
     category: 'Strategy',
     difficulty: 'Medium',
     website: 'https://www.catan.com/',
-    rating: 4.3,
+    rating: 5,
   },
   {
     name: 'Ticket to Ride',
@@ -21,7 +21,7 @@ export const BOARD_GAMES: BoardGame[] = [
     category: 'Family',
     difficulty: 'Easy',
     website: 'https://www.daysofwonder.com/tickettoride/en/',
-    rating: 4.0,
+    rating: 3,
   },
   {
     name: 'Gloomhaven',
@@ -32,7 +32,7 @@ export const BOARD_GAMES: BoardGame[] = [
     category: 'Adventure',
     difficulty: 'Hard',
     website: 'https://www.cephalofair.com/gloomhaven',
-    rating: 4.8,
+    rating: 2,
   },
   {
     name: 'Carcassonne',
@@ -43,7 +43,7 @@ export const BOARD_GAMES: BoardGame[] = [
     category: 'Family',
     difficulty: 'Easy',
     website: 'https://www.zmangames.com/en/games/carcassonne/',
-    rating: 4.2,
+    rating: 4,
   },
   {
     name: 'Pandemic',
@@ -54,7 +54,7 @@ export const BOARD_GAMES: BoardGame[] = [
     category: 'Cooperative',
     difficulty: 'Medium',
     website: 'https://www.zmangames.com/en/games/pandemic/',
-    rating: 4.5,
+    rating: 4,
   },
   {
     name: 'Terraforming Mars',
@@ -65,6 +65,6 @@ export const BOARD_GAMES: BoardGame[] = [
     category: 'Strategy',
     difficulty: 'Hard',
     website: 'https://strongholdgames.com/collections/terraforming-mars',
-    rating: 4.7,
+    rating: 3,
   },
 ];
