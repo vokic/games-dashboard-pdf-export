@@ -1,27 +1,65 @@
-<div>
-    <h2>{{ game.name }}</h2>
-    <p>{{ game.description }}</p>
+<div
+    class="w-80 lg:w-[28rem] h-76 rounded overflow-hidden shadow-lg bg-white p-6 m-3 flex flex-col justify-between text-gray-800">
 
-    <ul>
-        <li><strong>Players:</strong> {{ game.numberOfPlayers }}</li>
-        <li><strong>Playtime:</strong> {{ game.playtime }}</li>
-        <li><strong>Recommended Age:</strong> {{ game.recommendedAge }}</li>
-        <li><strong>Category:</strong> {{ game.category }}</li>
 
-        <li>
-            <strong>Difficulty:</strong>
-            <span>
+    <!-- Header row: name and rating -->
+    <div class="flex justify-between items-center mb-1">
+        <h2 class="text-2xl font-semibold leading-tight">{{ game.name }}</h2>
+        <div class="flex items-center gap-0.5 text-yellow-500 text-sm">
+            <span class="material-icons" style="font-size: 1rem;">star</span>
+            <span>{{ game.rating }} / 5</span>
+        </div>
+    </div>
+
+    <!-- Description -->
+    <p class="text-sm mb-2 leading-snug">{{ game.description }}</p>
+
+    <!-- Stats rows -->
+    <div class="text-sm space-y-1.5">
+
+        <div class="flex justify-between">
+            <div class="flex items-center gap-1">
+                <span class="material-icons text-base">group</span>
+                {{ game.numberOfPlayers }}
+            </div>
+            <div class="flex items-center gap-1">
+                <span class="material-icons text-base">schedule</span>
+                {{ game.playtime }}
+            </div>
+        </div>
+
+        <div class="flex justify-between">
+            <div class="flex items-center gap-1">
+                <span class="material-icons text-base">calendar_today</span>
+                {{ game.recommendedAge }}
+            </div>
+            <div class="flex items-center gap-1 relative group cursor-default">
+                <span class="material-icons text-base">bar_chart</span>
                 {{ game.difficulty }}
-                <span title="{{ difficultyTooltips[game.difficulty] }}">INFO</span>
-            </span>
-        </li>
+                <span class="material-icons text-gray-500 text-xs ml-1">info</span>
 
-        <li>
-            <strong>Rating:</strong> {{ game.rating }} / 5
-        </li>
-    </ul>
+                <!-- Tooltip -->
+                <div
+                    class="absolute bottom-full mb-1 left-1/2 transform -translate-x-1/2 w-48 bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10">
+                    {{ difficultyTooltips[game.difficulty] }}
+                </div>
+            </div>
+        </div>
 
-    <a href="{{ game.website }}" target="_blank" rel="noopener noreferrer">
-        Official Website
+        <div class="flex items-center gap-1">
+            <span class="material-icons text-base">weekend</span>
+            {{ game.category }}
+        </div>
+    </div>
+
+    <!-- Button -->
+    <a href="{{ game.website }}" target="_blank" rel="noopener noreferrer" class="mt-3 inline-block self-start border border-yellow-500 bg-white hover:bg-yellow-100 text-gray-800 py-1.5 px-3 rounded-lg
+ text-sm">
+        Learn More
     </a>
+
+
+
+
+
 </div>

@@ -3,18 +3,20 @@ import { BoardGame } from '../models/board-game.model';
 export const BOARD_GAMES: BoardGame[] = [
   {
     name: 'Catan',
-    description: 'Trade, build and settle the island of Catan.',
+    description:
+      'Build settlements, trade resources, and race to control the island of Catan. Strategy and negotiation are key to victory.',
     numberOfPlayers: '3-4 players',
     playtime: '60-120 minutes',
     recommendedAge: '10+',
     category: 'Strategy',
     difficulty: 'Medium',
     website: 'https://www.catan.com/',
-    rating: 5,
+    rating: 4,
   },
   {
     name: 'Ticket to Ride',
-    description: 'Build train routes across the country.',
+    description:
+      'Collect train cards to claim railway routes across North America. Simple to learn, yet packed with strategic depth.',
     numberOfPlayers: '2-5 players',
     playtime: '30-60 minutes',
     recommendedAge: '8+',
@@ -25,7 +27,8 @@ export const BOARD_GAMES: BoardGame[] = [
   },
   {
     name: 'Gloomhaven',
-    description: 'A cooperative, campaign-driven dungeon crawl.',
+    description:
+      'A massive tactical combat campaign in a fantasy world. Every choice matters in this deep, story-driven experience.',
     numberOfPlayers: '1-4 players',
     playtime: '60-120 minutes',
     recommendedAge: '14+',
@@ -36,7 +39,8 @@ export const BOARD_GAMES: BoardGame[] = [
   },
   {
     name: 'Carcassonne',
-    description: 'Tile-placement game building the medieval landscape.',
+    description:
+      'Place tiles to build cities, roads, and fields in medieval France. A calm but clever game of spatial strategy.',
     numberOfPlayers: '2-5 players',
     playtime: '30-45 minutes',
     recommendedAge: '7+',
@@ -47,7 +51,8 @@ export const BOARD_GAMES: BoardGame[] = [
   },
   {
     name: 'Pandemic',
-    description: 'Cooperative game to stop global outbreaks.',
+    description:
+      'Rebuild a post-war Europe through engine-building and asymmetric factions. Stunning visuals and sharp strategy combined.',
     numberOfPlayers: '2-4 players',
     playtime: '45 minutes',
     recommendedAge: '8+',
@@ -58,7 +63,8 @@ export const BOARD_GAMES: BoardGame[] = [
   },
   {
     name: 'Terraforming Mars',
-    description: 'Compete to develop Mars and make it habitable.',
+    description:
+      'Draft colorful tiles to decorate the royal palace walls. A beautiful game with elegant, abstract strategy.',
     numberOfPlayers: '1-5 players',
     playtime: '120 minutes',
     recommendedAge: '12+',

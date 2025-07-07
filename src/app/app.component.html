@@ -1,8 +1,9 @@
 <div class="bg-gray-100 py-10">
   <h1 class="text-3xl font-bold text-center my-8">Board Games</h1>
 
-
-  <div class="flex flex-wrap justify-center gap-x-6 gap-y-8">
-    <app-game-card *ngFor="let game of boardGames" [game]="game"></app-game-card>
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-8">
+      <app-game-card *ngFor="let game of boardGames" [game]="game"></app-game-card>
+    </div>
   </div>
 </div>
