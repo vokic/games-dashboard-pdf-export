@@ -45,3 +45,7 @@ README.md
 - Optimize PDF size
 - Implement search and filtering of board games.
 - Implement different design and animations (+ improved accessibility features) since it is gaming theme
+
+## Preview
+
+![Board Games Catalog Preview](https://i.imgur.com/0mJHhTh.png)
