@@ -6,7 +6,7 @@ This is a simple Angular project showcasing a catalog of board games. It include
 
 ## Live Demo
 
-You can see the live version hosted on Vercel: [Here](https://board-games-dashboard-pdf-download.vercel.app/)
+You can see the live version hosted on Vercel: [Here](https://board-games-dashboard-pdf-export-pdf-download.vercel.app/)
 
 ## Technologies Used
 
